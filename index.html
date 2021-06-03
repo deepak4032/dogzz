@@ -1,0 +1,337 @@
+<DOCTYPE!>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* 
+
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 360px;
+  height: 640px;
+  background: white;
+}
+
+
+
+/* The laptop with borders */
+.laptop {
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  left: 50%;
+  position: absolute;
+  width: 1366px;
+  height: 800px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: black;
+  border-width: 24px 24px 80px;
+  background-color: black;
+
+}
+
+/* The keyboard of the laptop */
+.laptop:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1600px;
+  height: 60px;
+  margin: 80px 0 0 -110px;
+  background: black;
+  border-radius: 6px;
+}
+
+/* The top of the keyboard */
+.laptop:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  bottom: -110px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  background: #f1f1f1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
+}
+
+/* The screen (or content) of the device */
+.laptop .content {
+  width: 1366px;
+  height: 800px;
+  overflow: hidden;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  box-sizing:border-box;
+}
+
+
+}
+b:hover{
+    background-color: rgb(129, 199, 89);
+
+}
+img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+div{
+    background-color: rgb(169, 119, 173);
+}
+img {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #360d79;
+}
+h2 {
+  text-shadow: 2px 2px 5px red;
+}
+img {
+  border: 5px solid #555;
+}
+h3{
+    font-size: 25px;
+    font-style: italic;
+}
+h2{
+    background-color: rgb(10, 10, 10);
+    color: red;
+    font-size: 50px;
+    font-style: arial rgb(243, 7, 7) ;
+}
+a.ex2:hover, a.ex2:active {font-size: 150%;
+    background-color: #ee1c0d;
+    color: rgb(253, 253, 253);
+    font-style: italiC;
+    font-size: x-large;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>"BEST THERAPY HAS FUR AND FOUR LEGS"</h2>
+  <p><h3> A world filled with so much stress, and worry we need something to look forward to at the end of the day. What better thing to look
+    forward to than coming home to your dog? After all they can do just about anything to make us feel better.</h3></p>
+</div>
+<hr>
+<!-- The App Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>POMERANIAN</b></h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b></b></h1>
+      <p class="thicker"><p><span style="font-size:36px">"PICHU MANI"</span> ​The Pomeranian combines a tiny body (no more than seven pounds) and a commanding big-dog demeanor. The abundant double coat, with its frill extending over the
+        chest and shoulders, comes in almost two dozen colors, and various patterns and markings, but is most commonly seen in orange or red.
+      
+      Alert and intelligent, Pomeranians are easily trained and make fine watchdogs and perky pets for families with children old enough to know the difference 
+      between a toy dog and a toy. Poms are active but can be exercised with indoor play and short walks, so they are content in both the city and suburbs.
+       They will master tricks and games with ease, though their favorite activity is providing laughs and companionship to their special human.</p></p>
+     <a class="ex2" href="https://en.wikipedia.org/wiki/Pomeranian_dog"> READ MORE</a> 
+       
+     
+       
+    </div>
+    <div class="column-33">
+        <img src="mani.jfif" width="335" height="471">
+    </div>
+  </div>
+</div>
+<hr>
+<!-- Clarity Section -->
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="brownie.JPG" alt="App" width="335" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>INDIAN BREED</b></h1>
+      <h1 class="large-font" style="color:red;"><b></b></h1>
+      <p><span style="font-size:24px">"BROWNIE"</span> Whenever we stop in a town to rest for a few days, inevitably, an adorable street dog finds its way to us. Whether we attract more dogs because we travel with our own or they simply gravitate towards new people who tend to promise food scraps, these dogs manage to make their way into our hearts, ultimately leaving us heartbroken when the time comes to depart. Adopting one stray dog from overseas not only rescues that animal from a life on the streets, but also helps prevent the generation of more strays. And it’s a fairly simple process, depending on which country the pup originates. Street dogs follow us around, play with Sora, play with us, and just hang around for some pets or some nibbles of whatever we may be eating. We’ve had dogs follow us for days when we’ve stayed in campgrounds and sleep outside our tent, protecting us throughout the night.</p>
+      <a class="ex2" href="https://en.wikipedia.org/wiki/Street_dog"> READ MORE</a>  
+  
+    </div>
+  </div>
+</div>
+<hr>
+<!-- The App Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>ROTTWEILER</b></h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b></b></h1>
+      <p><span style="font-size:36px">"ROTTI"</span> The Rottweiler was originally dogs bred to drive cattle to market. Later they were used to pull carts for butchers. They were among the earliest police dogs and serve with honor in the military.
+        Most important, they are popular family guardians and friends. Novice pet parents should beware, as these dogs are strong and intense. They need experienced care and training. Consistent, energetic pet parents will find a loving, faithful, and intelligent friend for life in a Rottie!</p>
+        <a class="ex2" href="https://en.wikipedia.org/wiki/Rottweiler"> READ MORE</a> 
+    </div>
+    <div class="column-33">
+        <img src="rott.jpg" width="335" height="471" >
+    </div>
+  </div>
+</div>
+
+<!-- Clarity Section -->
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="german.JPG" alt="App" width="335" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>GERMAN SHEPHERD</b></h1>
+      <h1 class="large-font" style="color:red;"><b></b></h1>
+      <p><span style="font-size:24px">"DON"</span> When well trained German Shepherds can be even tempered, self-assured, vigilant, docile and highly intelligent. This long list of qualities makes them good companions and protectors, and excellent guarding and herding dogs.
+
+        German Shepherds are driven by their motivation to work. They can become a dominant figure in their owners’ lives but German Shepherd training is easy, given the time and attention they need. This breed should receive significant daily mental and physical stimulation, with its high exercise requirement and need to learn.</p>
+      <a class="ex2" href="https://en.wikipedia.org/wiki/German_Shepherd"> READ MORE</a>  
+  
+    </div>
+  </div>
+</div>
+<hr>
+
+</body>
+</html>
